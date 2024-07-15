@@ -1,11 +1,19 @@
-const soma = (a, b) => {
+const exibir = (num) => {
+  console.log("A operação resultou em: " + num);
+}
+
+
+const soma = (a, b, callback) => {
   let op = a + b;
-  console.log(op);
+  callback(op)
 };
 
-const multiplicacao = (a, b) => {
+const multiplicacao = (a, b, cb) => {
   let op = a * b;
-  console.log(op);
+  cb(op)
 };
 
-multiplicacao(10, 3^3);
+soma(2, 2, exibir)
+
+multiplicacao(10, 3, exibir);
+
